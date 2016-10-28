@@ -11,10 +11,12 @@ TARGET_DIR="$BUILD_DIR/vendor/mypdf"
 echo "-----> Copying files to $TARGET_DIR"
 
 mkdir -p "$TARGET_DIR"
+unzip "$SOURCE_DIR/pdftk.zip" -d "$TARGET_DIR"
+chmod +x "$TARGET_DIR/pdftk"
 
-chmod +x "$SOURCE_DIR/pdftk"
-cp "$SOURCE_DIR/pdftk" "$TARGET_DIR"
-cp "$SOURCE_DIR/libgcj.so.14" "$TARGET_DIR"
+#chmod +x "$SOURCE_DIR/pdftk"
+#cp "$SOURCE_DIR/pdftk" "$TARGET_DIR"
+#cp "$SOURCE_DIR/libgcj.so.14" "$TARGET_DIR"
 
 # update PATH and LD_LIBRARY_PATH
 echo "-----> Updating environment variables"
