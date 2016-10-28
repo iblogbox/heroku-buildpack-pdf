@@ -1,0 +1,4 @@
+#!/bin/bash
+
+echo "pdf"
+exit 0
