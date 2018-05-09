@@ -17,6 +17,11 @@ chmod +x "$TARGET_DIR/pdftk"
 chmod +x "$SOURCE_DIR/pdfinfo"
 cp "$SOURCE_DIR/pdfinfo" "$TARGET_DIR"
 
+chmod +x "$SOURCE_DIR/pdfdetach"
+cp "$SOURCE_DIR/pdfdetach" "$TARGET_DIR"
+
+chmod +x "$SOURCE_DIR/cpdf"
+cp "$SOURCE_DIR/cpdf" "$TARGET_DIR"
 
 # update PATH and LD_LIBRARY_PATH
 echo "-----> Updating environment variables"
