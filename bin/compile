@@ -23,6 +23,9 @@ cp "$SOURCE_DIR/pdfdetach" "$TARGET_DIR"
 chmod +x "$SOURCE_DIR/cpdf"
 cp "$SOURCE_DIR/cpdf" "$TARGET_DIR"
 
+chmod +x "$SOURCE_DIR/trid"
+cp "$SOURCE_DIR/trid" "$TARGET_DIR"
+
 # update PATH and LD_LIBRARY_PATH
 echo "-----> Updating environment variables"
 PROFILE_PATH="$BUILD_DIR/.profile.d/mypdf.sh"
